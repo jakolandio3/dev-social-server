@@ -1,0 +1,11 @@
+{
+  "name": "dev-social",
+  "version": "1.0.0",
+  "description": "small application for a social network",
+  "main": "server.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jakob Douglas",
+  "license": "MIT"
+}
