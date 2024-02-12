@@ -59,7 +59,7 @@ router.get('/me', auth_1.default, function (req, res) { return __awaiter(void 0,
                 if (!profile) {
                     return [2 /*return*/, res.status(400).json({ msg: 'There is no profile for this user' })];
                 }
-                return [3 /*break*/, 3];
+                return [2 /*return*/, res.json(profile)];
             case 2:
                 error_1 = _a.sent();
                 res.status(500).send('Server Error');
