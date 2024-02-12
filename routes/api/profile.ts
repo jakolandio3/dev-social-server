@@ -4,8 +4,8 @@ import { Profile } from '../../models/Profile';
 import { NewUser } from './users';
 import { check, validationResult } from 'express-validator';
 import { User } from '../../models/User';
-import request from 'request';
-import express from 'express';
+const request = require('request');
+const express = require('express');
 const config = require('config');
 const router: Router = express.Router();
 
