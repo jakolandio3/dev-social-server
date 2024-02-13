@@ -205,7 +205,7 @@ router.delete(
 					.map((item) => item.id)
 					.indexOf(req.params.exp_id);
 
-				if (!removeIndex || removeIndex === -1) return res.send('Id not Valid');
+				if (removeIndex === -1) return res.send('Id not Valid');
 				profile.experience.splice(removeIndex, 1);
 				await profile.save();
 				res.json(profile);
@@ -273,7 +273,7 @@ router.delete(
 					.map((item) => item.id)
 					.indexOf(req.params.edu_id);
 
-				if (!removeIndex || removeIndex === -1)
+				if (removeIndex === -1)
 					return res.send('Id not Valid(No school matches this)');
 				profile.education.splice(removeIndex, 1);
 				await profile.save();
