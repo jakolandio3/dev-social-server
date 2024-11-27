@@ -8,6 +8,9 @@ const profileSchema = new mongoose.Schema({
 	company: {
 		type: String,
 	},
+	website: {
+		type: String,
+	},
 	location: {
 		type: String,
 	},
@@ -98,6 +101,9 @@ const profileSchema = new mongoose.Schema({
 			type: String,
 		},
 		instagram: {
+			type: String,
+		},
+		website: {
 			type: String,
 		},
 	},

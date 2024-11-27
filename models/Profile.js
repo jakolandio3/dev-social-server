@@ -10,6 +10,9 @@ var profileSchema = new mongoose_1.default.Schema({
     company: {
         type: String,
     },
+    website: {
+        type: String,
+    },
     location: {
         type: String,
     },
@@ -100,6 +103,9 @@ var profileSchema = new mongoose_1.default.Schema({
             type: String,
         },
         instagram: {
+            type: String,
+        },
+        website: {
             type: String,
         },
     },
