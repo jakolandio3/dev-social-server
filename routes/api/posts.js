@@ -137,7 +137,7 @@ var auth_1 = require('../../middleware/auth');
 var express_1 = require('express');
 var User_1 = require('../../models/User');
 var Post_1 = require('../../models/Post');
-var router = express_1.default.Router();
+var router = express_1.Router();
 //@route POST api/posts
 //@desc Create a post
 //@access Private
